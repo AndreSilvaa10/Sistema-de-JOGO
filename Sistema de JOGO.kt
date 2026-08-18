@@ -2,7 +2,7 @@ var nome = "fateco"
 var idade = 38
 var pontuacao = 300
 var vida = 100
-var dinheiro = 400
+var dinheiro = 0.50
 var jogadorAtivo = true
 
 
