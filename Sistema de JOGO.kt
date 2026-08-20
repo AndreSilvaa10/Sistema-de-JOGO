@@ -112,16 +112,30 @@ fun batalhar() {
     println("Vida: $vidaInimigo")
 
     println()
-    println("1 - Atacar ")
-    println("2 - Fugir ")
+    println("1 - Atacar")
+    println("2 - Fugir")
 
-    print("Escolha uma opção:")
+    print("Escolha uma opção: ")
     var opcaoBatalha = readln().toInt()
 
-when (opcaoBatalha) {
-    1 -> {}
-    }
+    when (opcaoBatalha) {
 
+        1 -> {
+            var dano = 15
+
+            vidaInimigo = vidaInimigo - dano
+            
+            println("Você atacou o $inimigo!")
+        }
+
+        2 -> {
+            println("Você fugiu da batalha!")
+        }
+
+        else -> {
+            println("Opção inválida!")
+        }
+    }
 }
 
 fun main() {
