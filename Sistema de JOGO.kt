@@ -106,6 +106,8 @@ fun batalhar() {
     var inimigo = "Goblin"
     var vidaInimigo = 50
 
+while(vidaInimigo > 0) {
+
     println()
     println("===== BATALHA =====")
     println("Inimigo: $inimigo")
@@ -125,17 +127,34 @@ fun batalhar() {
 
             vidaInimigo = vidaInimigo - dano
             
+            if (vidaInimigo < 0) {
+                vidaInimigo = 0
+            }
+            
             println("Você atacou o $inimigo!")
+            println("Dano causado: $dano")
+            println("Vida do $inimigo: $vidaInimigo")
+
+            if (vidaInimigo == 0) {
+                println("Inimigo derrotado!")
+
+                pontuacao = pontuacao + 100
+                dinheiro = dinheiro + 50
+            }
+
         }
 
         2 -> {
             println("Você fugiu da batalha!")
+            break
         }
 
         else -> {
             println("Opção inválida!")
         }
     }
+}
+
 }
 
 fun main() {
@@ -149,7 +168,7 @@ fun main() {
     var opcao = 0
  
  
-    while (opcao != 7 && jogadorAtivo) {
+    while (opcao != 8 && jogadorAtivo) {
  
         println()
         println("==========================")
@@ -162,7 +181,9 @@ fun main() {
         println("4 - Ver classificação")
         println("5 - Mostrar números")
         println("6 - Perder vida")
-        println("7 - Sair")
+        println("7 - Batalhar")
+        println("8 - Sair")
+        
  
         println("==========================")
  
@@ -197,6 +218,10 @@ fun main() {
             }
             
             7 -> {
+                batalhar()
+            }
+
+            8 -> {
                 println ("Saindo do sistema...")
             }
  
