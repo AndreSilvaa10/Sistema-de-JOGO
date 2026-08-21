@@ -21,6 +21,48 @@ O usuário pode interagir com o sistema através de um **menu no terminal**, esc
 
 ---
 
+## 📁 Estrutura do projeto
+
+```text
+Sistema-de-JOGO/
+│
+├── backend/
+│   └── app/
+│       ├── game.py
+│       ├── main.py
+│       ├── database.py
+│       ├── models.py
+│       ├── schemas.py
+│       │
+│       └── routers/
+│           └── jogador.py
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Personagem.jsx
+│   │   │   ├── BarraVida.jsx
+│   │   │   └── StatusJogador.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── index.html
+│   └── package.json
+│
+├── database/
+│
+├── jogos-anteriores/
+│
+├── Sistema de JOGO.kt
+├── Sistema de JOGO.jar
+├── sistema de jogo.py
+│
+└── README.md
+```
+---
+
 ## ⚙️ Funcionalidades
 
 O projeto permite realizar operações como:
@@ -106,31 +148,6 @@ Estudante de Desenvolvimento de Sistemas e desenvolvedor em formação.
 
 ---
 
-** Estrutura Do Visual Code: 
-sistema-de-jogo/
-│
-├── backend/
-│   └── app/
-│       ├── game.py
-│       ├── main.py
-│       ├── database.py
-│       ├── models.py
-│       ├── schemas.py
-│       └── routers/
-│           └── jogador.py
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Personagem.jsx
-│   │   │   ├── BarraVida.jsx
-│   │   │   └── StatusJogador.jsx
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── index.html
-│   └── package.json
-│
-└── database/**
+
 
 ⭐ **Projeto desenvolvido para aprendizado e prática de programação em Kotlin.**
