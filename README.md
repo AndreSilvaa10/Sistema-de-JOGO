@@ -121,6 +121,12 @@ cd Sistema-de-JOGO
 
 Depois, compile e execute o arquivo principal utilizando Kotlin.
 
+
+## Como Ativar o Venv.
+
+Coloca assim no terminal: venv\Scripts\activate
+Obs: tem que ter o python instalado
+
 ---
 
 ## 🚀 Próximas melhorias
