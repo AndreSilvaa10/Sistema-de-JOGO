@@ -106,4 +106,31 @@ Estudante de Desenvolvimento de Sistemas e desenvolvedor em formação.
 
 ---
 
+** Estrutura Do Visual Code: 
+sistema-de-jogo/
+│
+├── backend/
+│   └── app/
+│       ├── game.py
+│       ├── main.py
+│       ├── database.py
+│       ├── models.py
+│       ├── schemas.py
+│       └── routers/
+│           └── jogador.py
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Personagem.jsx
+│   │   │   ├── BarraVida.jsx
+│   │   │   └── StatusJogador.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── index.html
+│   └── package.json
+│
+└── database/**
+
 ⭐ **Projeto desenvolvido para aprendizado e prática de programação em Kotlin.**
